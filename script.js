@@ -36,19 +36,18 @@ function calcularCuota() {
         return;
     }
 
-    // PASO 3: Validamos que la entrega no sea mayor o igual al precio del auto
+    
     if (entrega >= precio) {
         alert("La entrega no puede ser mayor o igual al precio del auto.");
         return;
     }
 
-    // PASO 4: Hacemos los calculos
+
     var saldo         = precio - entrega;                  // Lo que queda por financiar
     var interes       = saldo * 0.03 * cuotas;             // Interes total (3% por mes)
     var totalAPagar   = saldo + interes;                   // Saldo mas el interes
     var cuotaMensual  = totalAPagar / cuotas;              // Dividimos en cuotas iguales
 
-    // PASO 5: Mostramos el resultado en el HTML
     var resultado = document.getElementById("resultadoSimulador");
 
     resultado.innerHTML =
