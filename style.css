@@ -232,3 +232,43 @@ img {
     height: auto;    /* Mantiene la proporción original */
     display: block;  /* Elimina espacios en blanco no deseados debajo */
 }
+.simulador {
+    background-color: #2a2a2a;
+    border: 2px solid #cc0000;
+    padding: 20px;
+    margin-top: 10px;
+    max-width: 420px;
+}
+
+.simulador label {
+    color: #ff4444;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.simulador select {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    border: 1px solid #cc0000;
+    padding: 7px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.simulador input {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    border: 1px solid #cc0000;
+    padding: 7px;
+    font-size: 14px;
+    width: 96%;
+}
+
+#resultadoSimulador {
+    background-color: #111111;
+    border-left: 4px solid #cc0000;
+    padding: 12px;
+    font-size: 15px;
+    color: #f0f0f0;
+    line-height: 1.8;
+}

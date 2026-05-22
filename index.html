@@ -84,9 +84,54 @@
         </div>
 
     </div>
-    <!-- FIN CONTENIDO -->
+    <div class="contenido">
 
-    <!-- PIE DE PÁGINA -->
+    <hr>
+    <h2>Simulador de Financiación</h2>
+    <p>Elegí un auto, ingresá tu entrega inicial y calculá tu cuota mensual.</p>
+
+    <div class="simulador">
+
+        <!-- SELECTOR DE AUTO -->
+        <label for="autoElegido">Auto:</label><br>
+        <select id="autoElegido">
+            <option value="5500">Fiat Palio Fire 2014 — U$D 5.500</option>
+            <option value="18000">Peugeot Partner 2023 — U$D 18.000</option>
+            <option value="6500">Chevrolet Meriva 2011 — U$D 6.500</option>
+            <option value="9500">Renault Fluence GT 2013 — U$D 9.500</option>
+            <option value="22000">Toyota Corolla XRS 2019 — U$D 22.000</option>
+            <option value="5000">Chevrolet Celta Advantage 2014 — U$D 5.000</option>
+        </select>
+
+        <br><br>
+
+        <!-- ENTREGA INICIAL -->
+        <label for="entrega">Entrega inicial (U$D):</label><br>
+        <input type="number" id="entrega" placeholder="Ej: 2000" min="0">
+
+        <br><br>
+
+        <!-- CANTIDAD DE CUOTAS -->
+        <label for="cuotas">Cantidad de cuotas:</label><br>
+        <select id="cuotas">
+            <option value="12">12 meses</option>
+            <option value="24">24 meses</option>
+            <option value="36">36 meses</option>
+        </select>
+
+        <br><br>
+
+        <!-- BOTON CALCULAR -->
+        <button class="boton" onclick="calcularCuota()">Calcular Cuota</button>
+
+        <br><br>
+
+        <!-- ACA APARECE EL RESULTADO -->
+        <div id="resultadoSimulador"></div>
+
+    </div>
+
+</div>
     <div class="footer">
         <p>© 2024 TODOMOTORCARRERA &nbsp;|&nbsp; Yofre Sur, Córdoba &nbsp;|&nbsp; Tel: 351-555-0199</p>
     </div>
